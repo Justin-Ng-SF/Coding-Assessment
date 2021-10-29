@@ -11,7 +11,7 @@ const Appointments = ({appointments}) => {
     //dayCount will be the unique days with appointments
     let dayCount = 0;
 
-    appointments.map((appointment) => {
+    appointments.forEach((appointment) => {
         let day = appointment.time.substring(0, 10);
         /*
         i am checking to see if i have any appointments for a day

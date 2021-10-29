@@ -9,7 +9,7 @@ const Navbar = () => {
 
             <a href="/appointments">Current Appointments</a>
             {` `}
-            <a href="/appointments/booking">Schedule an Appointment</a>
+            <a href="/appointments/booking">Book an Appointment</a>
             
         </div>
     )

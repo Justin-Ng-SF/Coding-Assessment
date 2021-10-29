@@ -4,8 +4,8 @@ import Appointment from './Appointment';
 const AppointmentsByDay = ({ appointmentsOfTheDay }) => {
 
     //for easy concatenation, should be static for each component of AppointmentsByDay
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    const month = months[appointmentsOfTheDay[0].time.substring(5, 7)];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const month = months[appointmentsOfTheDay[0].time.substring(5, 7)-1];
     const day = appointmentsOfTheDay[0].time.substring(8, 10);
     const year = appointmentsOfTheDay[0].time.substring(0, 4);
 
