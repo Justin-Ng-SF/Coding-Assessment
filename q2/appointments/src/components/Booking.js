@@ -4,7 +4,7 @@ const Booking = ({appointments}) => {
 
     return (
         <section>
-
+            booking
         </section>
     )
 
