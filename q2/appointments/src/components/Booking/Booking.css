@@ -1,0 +1,24 @@
+.booking{
+    position: relative;
+    width: 400px;
+    left: 40%;
+}
+.date-selection-container{
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+/* #check-date-button{
+
+} */
+.confirmation-container{
+    margin-top: 25px;
+    width: 100;
+    text-align: center;
+}
+#confirmation-button{
+    margin: 10px;
+}
+.sucessful-confirmation-message{
+    text-align: center;
+}
