@@ -32,6 +32,9 @@ function hash(stringToHash) {
     }).join('');
 }
 
+console.log(hash('abc12'))
+console.log(hash('abc123'))
+console.log(hash('abc124'))
 /*
 
 */

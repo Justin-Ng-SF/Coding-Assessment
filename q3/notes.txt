@@ -1,0 +1,15 @@
+abc123 is hashed to tKec*JobYlyHrhI%
+abc12 is hashed to Kq><X2_0#3N|Q^=D
+abc124 is hashed to qJ`b1QncXkxEscB}
+
+To make ANY hashing algorithm more secure, there are a few things we can do.
+-increase the amount of characters it produces as it would give more different possible combinations
+-make our hashed string longer; This would decrease the likelyhood of collision
+-add a salt or a pepper before it is hashed, decreasing the likelyhood of a sucessful rainbow table or brute force attack
+-increase the amount of times we hash our string, for every extra time we hash our string, an attack would essentialy be required to do the same 
+-in addition to using salt, use a salt database
+---
+No hashing algorithm is considered 100% fullproof. Many hashing algorithms share similar vulnerabilities. 
+-many popular hashing algorithms of the older generation were widely used; this meant that attackers could use a rainbow table of ALREADY hashed strings to compare to stolen databases
+-all hashing algorithms have a chance of collision, no matter how good it is; this means that there is the possibility of an invalid password going through
+-the faster a hash is created means that an attacker can get that hash just as fast; many of the more up to date algorithms now do multiple rounds of hashing meaning that it is more expensive for hackers to attempt to use rainbow tables or brute force
