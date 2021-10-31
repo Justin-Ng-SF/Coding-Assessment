@@ -4,6 +4,7 @@
     background-image: linear-gradient(rgb(255, 255, 255), rgb(243, 218, 148));
     min-width: 800px;
     height: 150px;
+    margin-bottom: 10px;
 }
 
 #nemsLogoIcon{
@@ -15,12 +16,12 @@
     top: 0;
 }
 
-.welcome-container{
+/* .welcome-container{
     background-image: linear-gradient(rgb(255, 255, 255), rgb(243, 218, 148));
     min-width: 800px;
     height: 150px;
 
-}
+} */
 
 #welcome-header{
     color: rgb(177, 48, 48);

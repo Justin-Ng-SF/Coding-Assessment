@@ -28,30 +28,25 @@ const Appointments = ({appointments}) => {
         else {
             appointmentsByDay[appointmentsDayMap.get(day)].push(appointment);
         }
-
     });
-
 
     return (
         <div className="appointments">
             <div className="appointment-container">
                 <div className="appointment-box">
-                    <h3 className="appointment-header">Appointments</h3>
-
-                        <div className="appointment-list">
-                            {appointmentsByDay.map((appointmentsForTheDay) => (
-                                //day, not time, is key in format of YYYY-MM-DD ie 2021-10-01
-                                <AppointmentsByDay appointmentsOfTheDay={appointmentsForTheDay} key={appointmentsDayMap.get(appointmentsForTheDay[0].time.substring(0, 10))}/>
-                            ))}
-                        </div>
+                    <h3 className="appointment-header">
+                        Appointments
+                    </h3>
+                    <div className="appointment-list">
+                        {appointmentsByDay.map((appointmentsForTheDay) => (
+                            //day, not time, is key in format of YYYY-MM-DD ie 2021-10-01
+                            <AppointmentsByDay appointmentsOfTheDay={appointmentsForTheDay} key={appointmentsDayMap.get(appointmentsForTheDay[0].time.substring(0, 10))}/>
+                        ))}
                     </div>
+                </div>
             </div>
-
-
-        
         </div>
     )
-
 }
 
 export default Appointments;

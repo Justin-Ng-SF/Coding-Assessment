@@ -22,11 +22,8 @@ const AppointmentsByDay = ({ appointmentsOfTheDay }) => {
                     <Appointment appointment={appointment}/>
                 </section>
             ))} 
-
-        
         </section>
     )
-
 }
 
 export default AppointmentsByDay;

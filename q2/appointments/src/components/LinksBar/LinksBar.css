@@ -1,9 +1,10 @@
 .links-container{
-    padding: 15px;
+    position:absolute;
+
 
 }
 .links-box{
-    border-radius: 16px;
+    border-radius: 4px;
     position: relative;
     height: 400px;
     width: 160px;
@@ -15,7 +16,7 @@
 .link{
     display: block;
     height: 50px;
-    padding: 25px;
+
     font-family: sans-serif;
     color: rgb(177, 48, 48);
     font-weight: bold;
