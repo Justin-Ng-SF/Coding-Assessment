@@ -1,0 +1,10 @@
+Test cases to be aware of would be:
+-rounding with 0
+-rounding with 9, 5, 4, and 1 as the left most digit in the decimal place
+-if the right-most non-decimal digit is a 9, how would it carry over if rounded up
+-negative counterparts to every non-negative specific edge case
+
+We can measure our algorithm in terms of space complexity and time complexity.
+
+We only are using a few constant amount of variables to store our data and therefore will have a space complexity that is comparable to O(1).
+We are not using any type of list-type data structures. Therefore, we will have a near constant speed, comparable to O(1), when running for any input.
