@@ -1,6 +1,7 @@
 import React from 'react';
 
 import AppointmentsByDay from "./AppointmentsByDay";
+import './Appointments.css'
 
 const Appointments = ({appointments}) => {
 
@@ -32,15 +33,23 @@ const Appointments = ({appointments}) => {
 
 
     return (
-        <section>
-            <h3>Appointments</h3>
+        <div className="appointments">
+            <div className="appointment-container">
+                <div className="appointment-box">
+                    <h3 className="appointment-header">Appointments</h3>
 
-            {appointmentsByDay.map((appointmentsForTheDay) => (
-                //day, not time, is key in format of YYYY-MM-DD ie 2021-10-01
-                <AppointmentsByDay appointmentsOfTheDay={appointmentsForTheDay} key={appointmentsDayMap.get(appointmentsForTheDay[0].time.substring(0, 10))}/>
-            ))}
+                        <div className="appointment-list">
+                            {appointmentsByDay.map((appointmentsForTheDay) => (
+                                //day, not time, is key in format of YYYY-MM-DD ie 2021-10-01
+                                <AppointmentsByDay appointmentsOfTheDay={appointmentsForTheDay} key={appointmentsDayMap.get(appointmentsForTheDay[0].time.substring(0, 10))}/>
+                            ))}
+                        </div>
+                    </div>
+            </div>
+
+
         
-        </section>
+        </div>
     )
 
 }
