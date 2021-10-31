@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import Appointments from './components/Appointment/Appointments';
-import ConfirmBooking from './components/Booking/ConfirmBooking';
 import Booking from './components/Booking/Booking';
 import LinksBar from './components/LinksBar/LinksBar';
 
@@ -28,7 +27,6 @@ function App() {
         <Switch>
           <Route exact path="/appointments" component={() => <Appointments appointments={appointments} />} />
           <Route exact path="/appointments/booking" component={() => <Booking appointments={appointments} />} />
-          <Route exact path="/appointments/confirm-booking" component={ConfirmBooking}/>
         </Switch>
       </Router>
     </div>
