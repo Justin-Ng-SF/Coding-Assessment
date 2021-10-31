@@ -28,17 +28,16 @@ const Booking = ({appointments}) => {
         myDate.setMonth(month);
         myDate.setDate(day + 4);
 
+
         //check for valid date/days/time, no sundays, 9am to 5pm only
         if (newDate < currentDate) {
             invalidDate = true;
             console.log('invalid date')
             alert('You have chosen an invalid date. Please choose another day.');
         }
-        else if (day === 31) {
-            if (month === 4 || month === 6 || month === 9 || month === 11) {
-                console.log('invalid day for month');
-                alert('You have chosen an invalid day of the month. Please choose another day.');
-            }
+        else if (day === 31 && (month === 4 || month === 6 || month === 9 || month === 11)) {
+            console.log('invalid day for month');
+            alert('You have chosen an invalid day of the month. Please choose another day.');
         }
         //not counting leap year
         else if (month === 2 && day > 28) {
@@ -72,7 +71,7 @@ const Booking = ({appointments}) => {
                 setBookingTime(currentDate);
                 alert(`Your appointment for ${months[month]} ${day}, ${year} at ${hour}:${minute} ${afternoon} has been confirmed.\n
                 Thank you.`);
-                window.location.replace('/confirmed');
+                window.location.replace('/appointments/confirmed');
             }
         }
     }
@@ -90,7 +89,7 @@ const Booking = ({appointments}) => {
                 <option value="08">August</option>
                 <option value="09">September</option>
                 <option value="10">October</option>
-                <option value="11">Novenmer</option>
+                <option value="11">November</option>
                 <option value="12">December</option>
             </select>
             <select id="day">
