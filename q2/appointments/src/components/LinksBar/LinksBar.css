@@ -1,0 +1,25 @@
+.links-container{
+    padding: 15px;
+
+}
+.links-box{
+    border-radius: 16px;
+    position: relative;
+    height: 400px;
+    width: 160px;
+    background-color: white;
+    border-color: rgb(255, 255, 255, 0);
+    box-shadow: 5px 5px 5px rgb(197, 186, 186);
+}
+
+.link{
+    display: block;
+    height: 50px;
+    padding: 25px;
+    font-family: sans-serif;
+    color: rgb(177, 48, 48);
+    font-weight: bold;
+}
+.link:hover {
+    background-color: rgb(253, 253, 231, 0.5);
+}
