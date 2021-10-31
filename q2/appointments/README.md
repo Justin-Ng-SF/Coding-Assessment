@@ -9,7 +9,9 @@ npm run
 
 # How to use
 To view the list of booked appointments listed in ascending order, go to http://localhost:3000/appointments or click the 'Appointments' link on the links section on the left side. 
+
 To book an appointment, go to http://localhost:3000/appointments/booking or click the 'Book an Appointment' link on the links section on the left side.
+
 See notes for valid appointment dates. When a booking is attempted, it will check if booking that appointment is allowed. If the date selected is valid for an appointment to be booked, the user will be redirected to a confirmation page that displays the date for which the user is trying to book an appointment for. If the user confirms, they will be given a confirmation message and redirected to the schedules page again. 
 
 ---
